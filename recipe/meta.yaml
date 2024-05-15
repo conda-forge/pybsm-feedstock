@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,7 +23,8 @@ requirements:
     - python >=3.8,<4.0
     - numpy >=1.23.1,<2.0.0
     - matplotlib-base >=3.5.2,<4.0.0
-    - scipy >=1.8.1,<2.0.0
+    - scipy >=1.8.1,<1.9  # [py<311]
+    - scipy >=1.9  # [py>=311]
     - py-opencv >=4.6.0,<5.0.0
 
 test:
