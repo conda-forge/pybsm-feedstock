@@ -1,5 +1,5 @@
 {% set name = "pybsm" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pybsm-{{ version }}.tar.gz
-  sha256: 2f922823ec7db869e651d321d0f6ae2155303aa7e52e666ebe0a5c5428a15841
+  sha256: 87df801e7959fff290a39966d989217ef04d6b20cc9afa95d827e594320e0a61
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
