@@ -47,7 +47,11 @@ outputs:
         - {{ pin_subpackage('pybsm', exact=True) }}
     test:
       imports:
-        - pybsm-graphics
+        - pybsm
+      commands:
+        - pip check
+      requires:
+        - pip
 
   - name: pybsm-headless
     requirements:
@@ -55,11 +59,15 @@ outputs:
         - python
       run:
         - python
-        - opencv-python-headless >=4.6.0
+        - opencv >=4.6.0
         - {{ pin_subpackage('pybsm', exact=True) }}
     test:
       imports:
-        - pybsm-headless
+        - pybsm
+      commands:
+        - pip check
+      requires:
+        - pip
 
 about:
   home: https://pypi.org/project/pybsm/
