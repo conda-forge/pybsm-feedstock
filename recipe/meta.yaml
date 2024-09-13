@@ -25,7 +25,6 @@ requirements:
     - matplotlib-base >=3.5.2
     - scipy <1.11.1  # [py<39]
     - scipy >=1.10.0,<1.14  # [py>=39]
-    - py-opencv >=4.6.0
 
 test:
   imports:
@@ -34,6 +33,33 @@ test:
     - pip check
   requires:
     - pip
+
+outputs:
+  - name: pybsm
+
+  - name: pybsm-graphics
+    requirements:
+      host:
+        - python
+      run:
+        - python
+        - py-opencv >=4.6.0
+        - {{ pin_subpackage('pybsm', exact=True) }}
+    test:
+      imports:
+        - pybsm-graphics
+
+  - name: pybsm-headless
+    requirements:
+      host:
+        - python
+      run:
+        - python
+        - opencv-python-headless >=4.6.0
+        - {{ pin_subpackage('pybsm', exact=True) }}
+    test:
+      imports:
+        - pybsm-headless
 
 about:
   home: https://pypi.org/project/pybsm/
