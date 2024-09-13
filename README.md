@@ -48,20 +48,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20945&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pybsm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.9.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20945&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pybsm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20945&branchName=main">
@@ -87,20 +73,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20945&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pybsm-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20945&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pybsm-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.9.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20945&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pybsm-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -132,20 +104,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20945&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pybsm-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.9.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20945&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pybsm-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.9.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>win_64_python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20945&branchName=main">
@@ -166,6 +124,8 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-pybsm-green.svg)](https://anaconda.org/conda-forge/pybsm) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pybsm.svg)](https://anaconda.org/conda-forge/pybsm) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pybsm.svg)](https://anaconda.org/conda-forge/pybsm) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pybsm.svg)](https://anaconda.org/conda-forge/pybsm) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pybsm--graphics-green.svg)](https://anaconda.org/conda-forge/pybsm-graphics) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pybsm-graphics.svg)](https://anaconda.org/conda-forge/pybsm-graphics) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pybsm-graphics.svg)](https://anaconda.org/conda-forge/pybsm-graphics) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pybsm-graphics.svg)](https://anaconda.org/conda-forge/pybsm-graphics) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pybsm--headless-green.svg)](https://anaconda.org/conda-forge/pybsm-headless) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pybsm-headless.svg)](https://anaconda.org/conda-forge/pybsm-headless) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pybsm-headless.svg)](https://anaconda.org/conda-forge/pybsm-headless) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pybsm-headless.svg)](https://anaconda.org/conda-forge/pybsm-headless) |
 
 Installing pybsm
 ================
@@ -177,16 +137,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pybsm` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `pybsm, pybsm-graphics, pybsm-headless` can be installed with `conda`:
 
 ```
-conda install pybsm
+conda install pybsm pybsm-graphics pybsm-headless
 ```
 
 or with `mamba`:
 
 ```
-mamba install pybsm
+mamba install pybsm pybsm-graphics pybsm-headless
 ```
 
 It is possible to list all of the versions of `pybsm` available on your platform with `conda`:
