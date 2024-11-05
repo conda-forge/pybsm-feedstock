@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -46,6 +46,7 @@ outputs:
     test:
       imports:
         - pybsm
+        - cv2
       commands:
         - pip check
       requires:
@@ -62,10 +63,12 @@ outputs:
     test:
       imports:
         - pybsm
+        - cv2
       commands:
         - pip check
       requires:
         - pip
+        - libopencv *=headless*  # [not win]
 
 about:
   home: https://pypi.org/project/pybsm/
