@@ -244,4 +244,5 @@ Feedstock Maintainers
 * [@Purg](https://github.com/Purg/)
 * [@barry-ravichandran](https://github.com/barry-ravichandran/)
 * [@bjrichardwebster](https://github.com/bjrichardwebster/)
+* [@eveenhuis](https://github.com/eveenhuis/)
 
