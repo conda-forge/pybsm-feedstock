@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pybsm-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pybsm-{{ version }}.tar.gz
   sha256: 47aa88c7f0fde2cf886c6844c5fd1d7406a672c4e53c300051dbf752bfa7d826
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -46,6 +46,7 @@ outputs:
     test:
       imports:
         - pybsm
+        - cv2
       commands:
         - pip check
       requires:
@@ -62,10 +63,12 @@ outputs:
     test:
       imports:
         - pybsm
+        - cv2
       commands:
         - pip check
       requires:
         - pip
+        - libopencv *=headless*  # [not win]
 
 about:
   home: https://pypi.org/project/pybsm/
