@@ -78,6 +78,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - stephencrowell
     - eveenhuis
     - bjrichardwebster
     - barry-ravichandran
