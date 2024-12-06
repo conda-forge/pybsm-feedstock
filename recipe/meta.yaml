@@ -32,44 +32,6 @@ test:
   requires:
     - pip
 
-outputs:
-  - name: pybsm
-
-  - name: pybsm-graphics
-    requirements:
-      host:
-        - python
-      run:
-        - python
-        - py-opencv >=4.6.0
-        - {{ pin_subpackage('pybsm', exact=True) }}
-    test:
-      imports:
-        - pybsm
-        - cv2
-      commands:
-        - pip check
-      requires:
-        - pip
-
-  - name: pybsm-headless
-    requirements:
-      host:
-        - python
-      run:
-        - python
-        - opencv >=4.6.0
-        - {{ pin_subpackage('pybsm', exact=True) }}
-    test:
-      imports:
-        - pybsm
-        - cv2
-      commands:
-        - pip check
-      requires:
-        - pip
-        - libopencv *=headless*  # [not win]
-
 about:
   home: https://pypi.org/project/pybsm/
   summary: 'This repo builds off of the work done by LeMaster and Eismann in creating the original pyBSM package for modeling image systems as well as LeMaster, et al. in their work in validating the pyBSM package'
