@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pybsm-feedstock
 
 Home: https://pypi.org/project/pybsm/
 
-Package license: MIT
+Package license: Apache-2.0
 
 Summary: This repo builds off of the work done by LeMaster and Eismann in creating the original pyBSM package for modeling image systems as well as LeMaster, et al. in their work in validating the pyBSM package
 
