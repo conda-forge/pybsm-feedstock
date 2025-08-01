@@ -20,9 +20,9 @@ requirements:
     - poetry-core
   run:
     - python
-    - numpy >=1.22,<2.0
+    - numpy >=1.22
     - matplotlib-base >=3.5.2
-    - scipy >=1.10.0,<1.14
+    - scipy >=1.10.0
 
 test:
   imports:
