@@ -1,5 +1,5 @@
 {% set name = "pybsm" %}
-{% set version = "0.10.2" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pybsm-{{ version }}.tar.gz
-  sha256: 86f961b699d92b00b9345f2b1be88c43a76be61666d89146c46c944763d1ac0f
+  sha256: a8d1cc5eaf1474c543b24e5a38cdbc91e5c81b88631ac3cbe7f5cc756a081bb7
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
+  skip: true  # [py<310]
 
 requirements:
   host:
@@ -20,9 +21,11 @@ requirements:
     - poetry-core
   run:
     - python
-    - numpy >=1.22,<2.0
+    - numpy >=1.22,<2.0  # [py<=312]
+    - numpy >=2.1  # [py>312]
     - matplotlib-base >=3.5.2
-    - scipy >=1.10.0,<1.14
+    - scipy >=1.10.0
+    - setuptools >=78.1.1
 
 test:
   imports:
