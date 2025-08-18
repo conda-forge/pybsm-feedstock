@@ -245,6 +245,3 @@ Feedstock Maintainers
 * [@eveenhuis](https://github.com/eveenhuis/)
 * [@stephencrowell](https://github.com/stephencrowell/)
 
-
-<!-- dummy commit to enable rerendering -->
-
