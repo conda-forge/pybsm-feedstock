@@ -26,7 +26,8 @@ requirements:
     - matplotlib-base >=3.5.2
     - scipy >=1.10.0
     - setuptools >=78.1.1
-    - numba >=0.62.1
+    - numba ~=0.62.1  # [py<=312]
+    - numba >=0.63.0  # [py>312]
 
 test:
   imports:
