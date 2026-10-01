@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pybsm-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pybsm-{{ version }}.tar.gz
   sha256: 60d6848975e07824c77b7b4f6af975b13f62277af1bb456ff4ed60d5330ea43b
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   skip: true  # [py<310]
 
 requirements:
