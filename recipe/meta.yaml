@@ -12,7 +12,6 @@ source:
 build:
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  skip: true  # [py<310]
 
 requirements:
   host:
@@ -21,13 +20,13 @@ requirements:
     - poetry-core
   run:
     - python
-    - numpy >=1.22,<2.0  # [py<=312]
-    - numpy >=2.1  # [py>312]
+    - numpy >=1.23.5  # [py<313]
+    - numpy >=2.1  # [py>=313]
     - matplotlib-base >=3.5.2
     - scipy >=1.10.0
-    - setuptools >=78.1.1
-    - numba ~=0.62.1  # [py<=312]
-    - numba >=0.63.0  # [py>312]
+    - setuptools >=83.0.0
+    - numba ~=0.62.1  # [py<313]
+    - numba >=0.63.0  # [py>=313]
 
 test:
   imports:
